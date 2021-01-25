@@ -24,7 +24,7 @@
                     </div>
                     @endif
 
-                    createです
+
                     <form action="{{route('memo.store')}}" method="POST">
                     @csrf
                     氏名
