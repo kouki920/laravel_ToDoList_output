@@ -14,9 +14,9 @@
                         </div>
                     @endif
 
-                    showです
-                    {{$memo->name}}
-                    {{$memo->comment}}
+                    氏名&nbsp;:&nbsp;{{$memo->name}}
+                    <br>
+                    メモ&nbsp;:&nbsp;{{$memo->comment}}
                     <form action="{{route('memo.edit',['id' => $memo->id])}}" method="GET">
                     @csrf
                     <input class="btn btn-info" type="submit" value="変更">
